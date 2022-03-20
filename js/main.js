@@ -181,6 +181,14 @@
 		});
 	
 	};
+	var mapClick=function(){
+		$('.kottayam').on('click', function(event){
+			window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination='Thirunakkara Mahadeva Temple, Temple Rd, Thirunakara, Kottayam, Kerala 686001'");
+		});
+		$('.tvm').on('click', function(event){
+			window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination='P. Subramaniam Hall, Vellayambalam - Vazhuthacaud Rd, Vazhuthacaud, Thiruvananthapuram, Kerala 695014'");
+		});
+	}
 
 
 	// Loading page
@@ -213,7 +221,6 @@
 		$(window).stellar();
 	};
 
-	
 	$(function(){
 		mobileMenuOutsideClick();
 		parallax();
@@ -226,6 +233,7 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+		mapClick();
 	});
 
 
