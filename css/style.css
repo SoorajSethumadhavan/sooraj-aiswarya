@@ -16,7 +16,8 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #828282;
-  background: #fff;
+  /* /* background: #fff; */
+  background-color: rgb(241 236 226/1) 
 }
 
 #page {
@@ -99,15 +100,20 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-nav #fh5co-logo {
+  color:black;
   font-size: 40px;
+  font-weight: 600;
+  letter-spacing: .1em;
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: rustica,sans-serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
-  color: #fff;
+  /* color: #fff; */
+  
+  color:black;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
@@ -128,7 +134,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 14px;
   padding: 30px 10px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -219,7 +225,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
 .fh5co-nav ul li.active > a {
-  color: #fff !important;
+  color: black !important;
 }
 
 #fh5co-counter,
@@ -649,9 +655,9 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-gallery-list li {
   display: block;
   padding: 0;
-  margin: 0 0 10px 1%;
+  margin: 0 0 10px 5px;
   list-style: none;
-  min-height: 400px;
+  min-height: 300px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -661,7 +667,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
-  border-radius: 7px;
+  border-radius: 2px;
 }
 @media screen and (max-width: 480px) {
   #fh5co-gallery-list li {
@@ -726,7 +732,7 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 #fh5co-gallery-list li.one-third {
-  width: 32.3%;
+  width: 24%;
 }
 @media screen and (max-width: 768px) {
   #fh5co-gallery-list li.one-third {
@@ -844,7 +850,8 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  /* font-family: "Sacramento", Arial, serif; */
+  font-family: rustica,sans-serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -999,7 +1006,7 @@ form label {
 #fh5co-couple,
 #fh5co-gallery,
 .fh5co-section {
-  padding: 7em 0;
+  margin: 7em 0;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -1065,8 +1072,10 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  /* font-family: "Sacramento", Arial, serif; */
+  font-family: rustica,sans-serif;
+  letter-spacing: .05em;
+  color: black;
   font-size: 30px;
 }
 .couple-half .groom, .couple-half .bride {
@@ -1183,6 +1192,7 @@ form label {
   font-weight: bold;
   color: #F14E95;
   font-family: "Sacramento", Arial, serif;
+  /* font-family: rustica,sans-serif; */
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
