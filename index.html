@@ -28,9 +28,10 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <audio autoplay src="bg.mp3"></audio>
+
   <body>
     <div class="fh5co-loader"></div>
-
     <div id="page">
       <nav class="fh5co-nav" role="navigation">
         <div class="container">
@@ -42,14 +43,21 @@
             </div>
             <div class="col-xs-1 text-right menu-1">
               <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li>
-                  <a href="gallery.html">Gallery</a>
+                <li class="active">
+                  <a href="index.html" target="_blank">Home</a>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <a href="gallery.html" target="_blank">Gallery</a>
+                </li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
               </ul>
             </div>
           </div>
+          <div
+            id="countdown"
+            class="simply-countdown simply-countdown-one"
+          ></div>
+          <button id="button">View Details</button>
         </div>
       </nav>
       <div id="color-overlay"></div>
@@ -73,149 +81,152 @@
       <br />
       <br />
       <br />
-      <div id="fh5co-gallery">
-        <div class="container">
-          <div class="row row-bottom-padded-md">
-            <div class="col-md-12">
-              <ul id="fh5co-gallery-list">
-                <li
-                  class="one-third animate-box"
-                  data-animate-effect="fadeIn"
-                  style="background-image: url(images/midOcean.jpg)"
-                ></li>
-                <li
-                  class="one-third animate-box"
-                  data-animate-effect="fadeIn"
-                  style="background-image: url(images/feet.jpg)"
-                ></li>
-                <li
-                  class="one-third animate-box"
-                  data-animate-effect="fadeIn"
-                  style="background-image: url(images/cafe1.jpg)"
-                ></li>
-                <li
-                  class="one-third animate-box"
-                  data-animate-effect="fadeIn"
-                  style="background-image: url(images/cafe2.jpg)"
-                ></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div id="fh5co-couple" style="position: relative">
-        <div class="container">
-          <div class="row" style="text-align: center">
-            <h3>
-              April 17th, 2022 <br />Thirunakkara Mahadeva Temple, Kottayam
-            </h3>
-            <p>We invite you to celebrate our wedding</p>
-          </div>
-          <div class="couple-wrap">
-            <div class="couple-half">
-              <div class="groom">
-                <img
-                  src="images/groom.jpeg"
-                  alt="groom"
-                  class="img-responsive"
-                />
-              </div>
-              <div class="desc-groom">
-                <h3>Sooraj Sethumadhavan</h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                  Separated they live in Bookmarksgrove
-                </p>
-              </div>
-            </div>
-            <p class="heart text-center"><i class="icon-heart2"></i></p>
-            <div class="couple-half">
-              <div class="bride">
-                <img
-                  src="images/bride.jpeg"
-                  alt="groom"
-                  class="img-responsive"
-                />
-              </div>
-              <div class="desc-bride">
-                <h3>Aiswaryalakshmi B</h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                  Separated they live in Bookmarksgrove
-                </p>
+      <div id="mainContent" style="display: none">
+        <div id="fh5co-gallery">
+          <div class="container">
+            <div class="row row-bottom-padded-md">
+              <div class="col-md-12">
+                <ul id="fh5co-gallery-list">
+                  <li
+                    class="one-third animate-box"
+                    data-animate-effect="fadeIn"
+                    style="background-image: url(images/midOcean.jpg)"
+                  ></li>
+                  <li
+                    class="one-third animate-box"
+                    data-animate-effect="fadeIn"
+                    style="background-image: url(images/feet.jpg)"
+                  ></li>
+                  <li
+                    class="one-third animate-box"
+                    data-animate-effect="fadeIn"
+                    style="background-image: url(images/cafe1.jpg)"
+                  ></li>
+                  <li
+                    class="one-third animate-box"
+                    data-animate-effect="fadeIn"
+                    style="background-image: url(images/cafe2.jpg)"
+                  ></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div id="fh5co-event" class="fh5co-bg" style="height: fit-content">
-        <div class="container">
-          <div class="row">
-            <div class="display-t">
-              <div class="display-tc">
-                <div class="col-md-10 col-md-offset-1">
-                  <div class="col-md-6 col-sm-6 text-center">
-                    <div class="event-wrap">
-                      <h3>Wedding Ceremony</h3>
-                      <div class="col-md-4 col-sm-4">
-                        <i class="icon-clock"></i>
-                        <span>9:30 AM</span>
-                        <span>10:00 AM</span>
+        <div id="fh5co-couple" style="position: relative">
+          <div class="container">
+            <div class="row" style="text-align: center">
+              <h3>
+                April 17th, 2022 <br />Thirunakkara Mahadeva Temple, Kottayam
+              </h3>
+              <p>We invite you to celebrate our wedding</p>
+            </div>
+            <div class="couple-wrap">
+              <div class="couple-half">
+                <div class="groom">
+                  <img
+                    src="images/groom.jpeg"
+                    alt="groom"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="desc-groom">
+                  <h3>Sooraj Sethumadhavan</h3>
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove
+                  </p>
+                </div>
+              </div>
+              <p class="heart text-center"><i class="icon-heart2"></i></p>
+              <div class="couple-half">
+                <div class="bride">
+                  <img
+                    src="images/bride.jpeg"
+                    alt="groom"
+                    class="img-responsive"
+                  />
+                </div>
+                <div class="desc-bride">
+                  <h3>Aiswaryalakshmi B</h3>
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="fh5co-event" class="fh5co-bg" style="height: fit-content">
+          <div class="container">
+            <div class="row">
+              <div class="display-t">
+                <div class="display-tc">
+                  <div class="col-md-10 col-md-offset-1">
+                    <div class="col-md-6 col-sm-6 text-center">
+                      <div class="event-wrap">
+                        <h3>Wedding Ceremony</h3>
+                        <div class="col-md-4 col-sm-4">
+                          <i class="icon-clock"></i>
+                          <span>9:30 AM</span>
+                          <span>10:00 AM</span>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <i class="icon-calendar"></i>
+                          <span>Sunday 17</span>
+                          <span>April, 2022</span>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <i class="icon-location-pin"></i>
+                          <span>Thirunakkara Temple</span>
+                        </div>
+                        <p>
+                          The wedding is happening at Sree Thirunakkara Mahadeva
+                          Temple. More info to be updated
+                        </p>
+                        <p>
+                          <a
+                            style="cursor: pointer"
+                            class="btn btn-default btn-sm kottayam"
+                            >Map</a
+                          >
+                        </p>
                       </div>
-                      <div class="col-md-4 col-sm-4">
-                        <i class="icon-calendar"></i>
-                        <span>Sunday 17</span>
-                        <span>April, 2022</span>
-                      </div>
-                      <div class="col-md-4 col-sm-4">
-                        <i class="icon-location-pin"></i>
-                        <span>Thirunakkara Temple</span>
-                      </div>
-                      <p>
-                        The wedding is happening at Sree Thirunakkara Mahadeva
-                        Temple. More info to be updated
-                      </p>
-                      <p>
-                        <a
-                          style="cursor: pointer"
-                          class="btn btn-default btn-sm kottayam"
-                          >Map</a
-                        >
-                      </p>
                     </div>
-                  </div>
-                  <div class="col-md-6 col-sm-6 text-center">
-                    <div class="event-wrap">
-                      <h3>Wedding Party</h3>
-                      <div class="col-md-4 col-sm-4">
-                        <i class="icon-clock"></i>
-                        <span>5:00 PM</span>
-                        <span>9:00 PM</span>
+                    <div class="col-md-6 col-sm-6 text-center">
+                      <div class="event-wrap">
+                        <h3>Wedding Party</h3>
+                        <div class="col-md-4 col-sm-4">
+                          <i class="icon-clock"></i>
+                          <span>5:00 PM</span>
+                          <span>9:00 PM</span>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <i class="icon-calendar"></i>
+                          <span>Tuesday 19</span>
+                          <span>April, 2022</span>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <i class="icon-location-pin"></i>
+                          <span>Subramoniom Hall</span>
+                        </div>
+                        <p>
+                          The celebrations continue as we host a wedding
+                          reception party at the heart of Trivandrum.
+                        </p>
+                        <p>
+                          <a
+                            style="cursor: pointer"
+                            class="btn btn-default btn-sm tvm"
+                            >Map</a
+                          >
+                        </p>
                       </div>
-                      <div class="col-md-4 col-sm-4">
-                        <i class="icon-calendar"></i>
-                        <span>Tuesday 19</span>
-                        <span>April, 2022</span>
-                      </div>
-                      <div class="col-md-4 col-sm-4">
-                        <i class="icon-location-pin"></i>
-                        <span>Subramoniom Hall</span>
-                      </div>
-                      <p>
-                        The celebrations continue as we host a wedding reception
-                        party at the heart of Trivandrum.
-                      </p>
-                      <p>
-                        <a
-                          style="cursor: pointer"
-                          class="btn btn-default btn-sm tvm"
-                          >Map</a
-                        >
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -224,10 +235,6 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="gototop js-top">
-      <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
     </div>
 
     <!-- jQuery -->
@@ -242,5 +249,16 @@
     <script src="js/simplyCountdown.js"></script>
     <!-- Main -->
     <script src="js/main.js"></script>
+    <script>
+      var d = new Date(Date.parse("2022-04-17T09:30:00"));
+      // default example
+      simplyCountdown(".simply-countdown-one", {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        hours: d.getHours(),
+        minutes: d.getMinutes(),
+      });
+    </script>
   </body>
 </html>

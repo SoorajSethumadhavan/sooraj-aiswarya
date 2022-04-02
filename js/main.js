@@ -115,7 +115,7 @@
 	var loaderPage = function() {
 		$(".fh5co-loader").fadeOut("slow");
 	};
-
+	
 	$(function(){
 		mobileMenuOutsideClick();
 		offcanvasMenu();
@@ -123,7 +123,28 @@
 		dropdown();
 		loaderPage();
 		mapClick();
+		const button = document.querySelector("#button");
+button.addEventListener("click", () => {
+	$("#mainContent").attr('style',"display:block")
+	$("#countdown").attr('style',"display:none")
+	$("#button").attr('style',"display:none")
+	const icon = document.querySelector("#button > i");
+const audio = document.querySelector("audio");
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  button.classList.add("fade");
+});
 	});
+	
 
 
 }());
