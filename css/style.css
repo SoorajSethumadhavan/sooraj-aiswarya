@@ -115,8 +115,8 @@ figure {
   border: 1px #ccc solid;
   color: white;
   background: transparent;
-  top: 30%;
-  left: 32%;
+  bottom: 10%;
+  left: 35%;
 }
 .fh5co-nav {
   position: absolute;
@@ -137,13 +137,13 @@ figure {
   font-size: 40px;
   font-weight: 600;
   letter-spacing: 0.1em;
-  margin: 0;
+  margin: 40px 0;
   padding: 0;
   line-height: 40px;
   font-family: rustica, sans-serif;
 }
 .fh5co-nav a {
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   color: rgb(241 236 226/1);
 
   /* color: black; */
@@ -784,12 +784,13 @@ figure {
 }
 @media screen and (max-width: 480px) {
   #fh5co-logo {
-    font-size: 23px !important;
+    font-size: 25px !important;
   }
   #fh5co-gallery-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 5px;
+    margin: 150px 0;
   }
   #fh5co-gallery-list li.one-third {
     width: 100%;
@@ -995,6 +996,9 @@ form label {
   /* The countdown */
   text-align: center;
   margin-bottom: 2em;
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
 }
 
 .simply-countdown > .simply-section {
@@ -1067,7 +1071,7 @@ form label {
   #fh5co-couple,
   #fh5co-gallery,
   .fh5co-section {
-    padding: 3em 0;
+    padding: 3em 0 0;
   }
 }
 
@@ -1232,9 +1236,6 @@ form label {
   color: #5d5d5d;
 }
 
-.fh5co-heading {
-  margin-bottom: 5em;
-}
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
@@ -1242,8 +1243,7 @@ form label {
   font-size: 60px;
   margin-bottom: 10px;
   line-height: 1.5;
-  font-weight: bold;
-  color: #f14e95;
+  color: rgb(241 236 226/1);
   font-family: "Sacramento", Arial, serif;
   /* font-family: rustica,sans-serif; */
 }
@@ -1923,5 +1923,3 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
-
-/*# sourceMappingURL=style.css.map */

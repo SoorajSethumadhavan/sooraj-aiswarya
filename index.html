@@ -28,7 +28,7 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <audio autoplay src="bg.mp3"></audio>
+  <audio autoplay loop src="bg.mp3"></audio>
 
   <body>
     <div class="fh5co-loader"></div>
@@ -36,12 +36,7 @@
       <nav class="fh5co-nav" role="navigation">
         <div class="container">
           <div class="row">
-            <div class="col-xs-11">
-              <div id="fh5co-logo">
-                <a href="index.html">AISWARYA + SOORAJ</a>
-              </div>
-            </div>
-            <div class="col-xs-1 text-right menu-1">
+            <div class="col-xs-6 text-right menu-1">
               <ul>
                 <li class="active">
                   <a href="index.html" target="_blank">Home</a>
@@ -53,111 +48,24 @@
               </ul>
             </div>
           </div>
-          <div
-            id="countdown"
-            class="simply-countdown simply-countdown-one"
-          ></div>
-          <button id="button">View Details</button>
-        </div>
-      </nav>
-      <div id="color-overlay"></div>
-      <!-- <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-color: rgb(241 236 226/1)" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t">
-						<div class="display-tc animate-box" data-animate-effect="fadeIn" style="transform: translate(0px, 0px); opacity: 1; visibility: inherit;">
-							<h1>Sooraj &amp; Aiswaryalakshmi</h1>
-							<h2>We Are Getting Married</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header> -->
-      <br />
-      <br />
-      <br />
-
-      <div id="mainContent" style="display: none">
-        <div id="fh5co-gallery">
-          <div class="container">
-            <div class="row row-bottom-padded-md">
-              <div class="col-md-12">
-                <ul id="fh5co-gallery-list">
-                  <li
-                    class="one-third animate-box"
-                    data-animate-effect="fadeIn"
-                    style="background-image: url(images/midOcean.jpg)"
-                  ></li>
-                  <li
-                    class="one-third animate-box"
-                    data-animate-effect="fadeIn"
-                    style="background-image: url(images/feet.jpg)"
-                  ></li>
-                  <li
-                    class="one-third animate-box"
-                    data-animate-effect="fadeIn"
-                    style="background-image: url(images/cafe1.jpg)"
-                  ></li>
-                  <li
-                    class="one-third animate-box"
-                    data-animate-effect="fadeIn"
-                    style="background-image: url(images/cafe2.jpg)"
-                  ></li>
-                </ul>
-              </div>
+          <div class="col-xs-11">
+            <div id="fh5co-logo">
+              <a href="index.html">AISWARYA + SOORAJ</a>
             </div>
           </div>
         </div>
-
+      </nav>
+      <div id="color-overlay"></div>
+      <br />
+      <br />
+      <br />
+      <div id="countdown" class="simply-countdown simply-countdown-one"></div>
+      <button id="button">View Details</button>
+      <div id="mainContent" style="visibility: hidden">
         <div id="fh5co-couple" style="position: relative">
-          <div class="container">
+          <div class="container fh5co-heading">
             <div class="row" style="text-align: center">
-              <h3>
-                April 17th, 2022 <br />Thirunakkara Mahadeva Temple, Kottayam
-              </h3>
-              <p>We invite you to celebrate our wedding</p>
-            </div>
-            <div class="couple-wrap">
-              <div class="couple-half">
-                <div class="groom">
-                  <img
-                    src="images/groom.jpeg"
-                    alt="groom"
-                    class="img-responsive"
-                  />
-                </div>
-                <div class="desc-groom">
-                  <h3>Sooraj Sethumadhavan</h3>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove
-                  </p>
-                </div>
-              </div>
-              <p class="heart text-center"><i class="icon-heart2"></i></p>
-              <div class="couple-half">
-                <div class="bride">
-                  <img
-                    src="images/bride.jpeg"
-                    alt="groom"
-                    class="img-responsive"
-                  />
-                </div>
-                <div class="desc-bride">
-                  <h3>Aiswaryalakshmi B</h3>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove
-                  </p>
-                </div>
-              </div>
+              <h2>We invite you to celebrate our wedding</h2>
             </div>
           </div>
         </div>
@@ -258,6 +166,7 @@
         day: d.getDate(),
         hours: d.getHours(),
         minutes: d.getMinutes(),
+        zeroPad: true,
       });
     </script>
   </body>

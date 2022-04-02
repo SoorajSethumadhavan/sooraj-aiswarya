@@ -125,7 +125,7 @@
 		mapClick();
 		const button = document.querySelector("#button");
 button.addEventListener("click", () => {
-	$("#mainContent").attr('style',"display:block")
+	$('#mainContent').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0},2000);
 	$("#countdown").attr('style',"display:none")
 	$("#button").attr('style',"display:none")
 	const icon = document.querySelector("#button > i");
