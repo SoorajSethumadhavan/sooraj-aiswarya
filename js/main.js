@@ -122,7 +122,6 @@
 		burgerMenu();
 		dropdown();
 		loaderPage();
-		counter();
 		mapClick();
 	});
 
