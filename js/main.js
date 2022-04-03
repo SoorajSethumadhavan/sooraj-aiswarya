@@ -103,7 +103,7 @@
 
 	var mapClick=function(){
 		$('.kottayam').on('click', function(event){
-			window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination='Thirunakkara Mahadeva Temple, Temple Rd, Thirunakara, Kottayam, Kerala 686001'");
+			window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination='The Windsor Castle Leisure Hotel & Ayurvedic Resort'");
 		});
 		$('.tvm').on('click', function(event){
 			window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination='P. Subramaniam Hall, Vellayambalam - Vazhuthacaud Rd, Vazhuthacaud, Thiruvananthapuram, Kerala 695014'");
@@ -128,6 +128,7 @@ button.addEventListener("click", () => {
 	$('#mainContent').css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0},2000);
 	$("#countdown").attr('style',"display:none")
 	$("#button").attr('style',"display:none")
+	$("#liveLink").attr('style',"display:none")
 	const icon = document.querySelector("#button > i");
 const audio = document.querySelector("audio");
   if (audio.paused) {
