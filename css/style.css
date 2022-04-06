@@ -1008,7 +1008,9 @@ form label {
   position: relative;
   animation: pulse 1s ease infinite;
 }
-
+.eventDetail {
+  margin-bottom: 15px;
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
