@@ -115,6 +115,7 @@ figure {
   border: 1px #ccc solid;
   color: white;
   background: transparent;
+  width: 120px;
 }
 .fh5co-nav {
   position: absolute;
@@ -474,8 +475,7 @@ figure {
 }
 #fh5co-counter .event-wrap p,
 #fh5co-counter .event-wrap span,
-#fh5co-event .event-wrap p,
-#fh5co-event .event-wrap span {
+#fh5co-event .event-wrap p {
   display: block;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1012,7 +1012,7 @@ form label {
   animation: pulse 1s ease infinite;
 }
 .eventDetail {
-  margin-bottom: -5px;
+  margin-bottom: 10px;
 }
 @keyframes pulse {
   0% {
@@ -1247,7 +1247,7 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   color: rgb(241 236 226/1);
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Playball", cursive;
   /* font-family: rustica,sans-serif; */
 }
 @media screen and (max-width: 768px) {
