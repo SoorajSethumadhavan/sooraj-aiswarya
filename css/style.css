@@ -1012,7 +1012,7 @@ form label {
   animation: pulse 1s ease infinite;
 }
 .eventDetail {
-  margin-bottom: 0px;
+  margin-bottom: -5px;
 }
 @keyframes pulse {
   0% {
