@@ -103,7 +103,7 @@
 
 	var mapClick=function(){
 		$('.kottayam').on('click', function(event){
-			window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination='The Windsor Castle Leisure Hotel & Ayurvedic Resort'");
+			window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination='Mammen Mappila Hall, Park Ln Rd, Eerayil Kadavu, Kottayam, Kerala 686004'");
 		});
 		$('.tvm').on('click', function(event){
 			window.open("https://www.google.com/maps/dir/?api=1&travelmode=driving&layer=traffic&destination='P. Subramaniam Hall, Vellayambalam - Vazhuthacaud Rd, Vazhuthacaud, Thiruvananthapuram, Kerala 695014'");
